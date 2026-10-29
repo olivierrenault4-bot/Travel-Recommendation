@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Voyage au bout de l'enfer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #17232b;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            padding: 25px 40px;
+            background-color: #14252b;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e9b96e;
+        }
+
+        main {
+            min-height: 85vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px;
+            box-sizing: border-box;
+
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.75)
+                ),
+                url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .formulaire {
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #d9a441;
+            color: #17232b;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e9b96e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="travel_recommendation.html">Accueil</a>
+        <a href="about_us.html">À propos de nous</a>
+        <a href="contact_us.html">Contactez-nous</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h1>CONTACTEZ-NOUS</h1>
+            <p>Une question ? Une envie d'aventure ?</p>
+            <p>Écrivez-nous, nous serons ravis de vous répondre.</p>
+        </section>
+
+        <form class="formulaire" id="contactForm">
+
+            <label for="nom">Nom</label>
+            <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre nom"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre adresse email"
+                required
+            >
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Écrivez votre message..."
+                required
+            ></textarea>
+
+            <button type="submit">Soumettre</button>
+
+        </form>
+
+    </main>
+
+    <script>
+        document.getElementById("contactForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Votre formulaire a été rempli. Merci !");
+            });
+    </script>
+
+</body>
+</html>
