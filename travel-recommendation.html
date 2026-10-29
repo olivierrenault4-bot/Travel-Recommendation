@@ -99,8 +99,33 @@
                 font-size: 36px;
             }
         }
+        
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.result-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
     </style>
 </head>
+
+<div id="results"></div>
+
+<script src="travel_recommendation.js"></script>
 
 <body>
 
