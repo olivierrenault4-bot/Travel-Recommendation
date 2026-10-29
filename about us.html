@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>À propos - Voyage au bout de l'enfer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #17232b;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            padding: 25px 40px;
+            background-color: #14252b;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e9b96e;
+        }
+
+        main {
+            min-height: 85vh;
+            padding: 60px 8%;
+            background-image:
+                linear-gradient(
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.75)
+                ),
+                url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            color: #e9b96e;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 850px;
+        }
+
+        .equipe {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .membre {
+            background: rgba(255,255,255,0.12);
+            padding: 25px;
+            border-radius: 10px;
+            width: 230px;
+        }
+
+        .membre h3 {
+            margin-bottom: 10px;
+        }
+
+        .role {
+            color: #e9b96e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="travel_recommendation.html">Accueil</a>
+        <a href="about_us.html">À propos de nous</a>
+        <a href="contact_us.html">Contactez-nous</a>
+    </nav>
+
+    <main>
+        <h1>À PROPOS DE NOUS</h1>
+
+        <p>
+            Bienvenue chez Voyage au bout de l'enfer,
+            une plateforme dédiée aux voyageurs
+            passionnés d'aventure et de découverte.
+        </p>
+
+        <p>
+            Notre mission est de vous faire découvrir
+            des destinations exceptionnelles,
+            des cultures fascinantes et des expériences
+            authentiques à travers le monde.
+        </p>
+
+        <h2>NOTRE ÉQUIPE</h2>
+
+        <div class="equipe">
+
+            <div class="membre">
+                <h3>Alexandre Martin</h3>
+                <p>Fondateur</p>
+                <p class="role">Direction générale</p>
+            </div>
+
+            <div class="membre">
+                <h3>Sophie Laurent</h3>
+                <p>Responsable voyages</p>
+                <p class="role">Création des destinations</p>
+            </div>
+
+            <div class="membre">
+                <h3>Thomas Bernard</h3>
+                <p>Expert destinations</p>
+                <p class="role">Conseil et accompagnement</p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
