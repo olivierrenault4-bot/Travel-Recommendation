@@ -40,6 +40,12 @@
       "name": "Angkor Wat",
       "imageUrl": "https://images.unsplash.com/photo-1602643163983-ed0babc39797",
       "description": "Découvrez le célèbre temple d'Angkor Wat au Cambodge."
+    },
+    {
+      "id": 2,
+      "name": "Temple de Kyoto",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      "description": "Admirez les temples traditionnels et les jardins japonais de Kyoto."
     }
   ],
   "beaches": [
@@ -48,6 +54,12 @@
       "name": "Plage tropicale",
       "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
       "description": "Découvrez une plage paradisiaque aux eaux turquoise."
+    },
+    {
+      "id": 2,
+      "name": "Plage de la Côte d'Azur",
+      "imageUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077",
+      "description": "Profitez des plages méditerranéennes et du soleil du sud de la France."
     }
   ]
 }
