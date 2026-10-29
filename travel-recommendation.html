@@ -5,7 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voyage au bout de l'enfer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #17232b;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 35px;
+            background-color: #14252b;
+        }
+
+        nav h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e9b96e;
+        }
+
+        nav input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #d9a441;
+            color: #17232b;
+            font-weight: bold;
+        }
+
+        .accueil {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)
+                ),
+                url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contenu {
+            max-width: 650px;
+            padding: 60px;
+        }
+
+        .contenu h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .contenu p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        .reserver {
+            margin-top: 25px;
+            padding: 15px 30px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .contenu {
+                padding: 25px;
+            }
+
+            .contenu h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <nav>
@@ -15,11 +111,9 @@
         <a href="about_us.html">À propos de nous</a>
         <a href="contact_us.html">Contactez-nous</a>
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Rechercher une destination..."
-        >
+        <input type="text"
+               id="searchInput"
+               placeholder="Rechercher une destination...">
 
         <button id="searchBtn" type="button">
             Rechercher
@@ -29,6 +123,31 @@
             Réinitialiser
         </button>
     </nav>
+
+    <main class="accueil">
+        <section class="contenu">
+
+            <h1>VOYAGE AU BOUT DE L'ENFER</h1>
+
+            <p>
+                Osez sortir des sentiers battus !
+                Explorez des destinations fascinantes,
+                découvrez des cultures extraordinaires
+                et vivez des aventures inoubliables.
+            </p>
+
+            <p>
+                Des montagnes mystérieuses aux plages
+                paradisiaques, votre prochaine aventure
+                commence ici.
+            </p>
+
+            <button class="reserver" type="button">
+                Réserver maintenant
+            </button>
+
+        </section>
+    </main>
 
 </body>
 </html>
