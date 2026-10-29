@@ -1,0 +1,53 @@
+
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Japon",
+      "cities": [
+        {
+          "name": "Tokyo",
+          "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+          "description": "Découvrez Tokyo, entre traditions japonaises et modernité."
+        },
+        {
+          "name": "Kyoto",
+          "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+          "description": "Explorez les temples et les jardins historiques de Kyoto."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "France",
+      "cities": [
+        {
+          "name": "Paris",
+          "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+          "description": "Visitez Paris, ses monuments et ses quartiers emblématiques."
+        },
+        {
+          "name": "Nice",
+          "imageUrl": "https://images.unsplash.com/photo-1533105079780-92b9be482077",
+          "description": "Profitez du soleil et des paysages de la Côte d'Azur."
+        }
+      ]
+    }
+  ],
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat",
+      "imageUrl": "https://images.unsplash.com/photo-1602643163983-ed0babc39797",
+      "description": "Découvrez le célèbre temple d'Angkor Wat au Cambodge."
+    }
+  ],
+  "beaches": [
+    {
+      "id": 1,
+      "name": "Plage tropicale",
+      "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      "description": "Découvrez une plage paradisiaque aux eaux turquoise."
+    }
+  ]
+}
