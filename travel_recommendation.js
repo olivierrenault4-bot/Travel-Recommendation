@@ -95,14 +95,21 @@ async function searchRecommendations() {
     });
 }
 
-// Bouton Rechercher
-searchBtn.addEventListener("click", searchRecommendations);
 
-// Bouton Réinitialiser
-resetBtn.addEventListener("click", () => {
-    searchInput.value = "";
-    results.innerHTML = "";
-});
+ // Boutons Rechercher et Réinitialiser
+if (searchBtn && resetBtn && searchInput && results) {
+
+    searchBtn.addEventListener("click", searchRecommendations);
+
+    resetBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        results.innerHTML = "";
+    });
+
+} else {
+    console.error("Un élément HTML est introuvable.");
+}
+
 
 // Vérification des données dans la console
 fetchRecommendations();
