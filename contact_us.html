@@ -1,12 +1,18 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contactez-nous - Voyage au bout de l'enfer</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -20,6 +26,7 @@
             gap: 35px;
             padding: 25px 40px;
             background-color: #14252b;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -40,12 +47,11 @@
             flex-wrap: wrap;
             gap: 40px;
             padding: 40px;
-            box-sizing: border-box;
 
             background-image:
                 linear-gradient(
-                    rgba(0,0,0,0.75),
-                    rgba(0,0,0,0.75)
+                    rgba(0, 0, 0, 0.75),
+                    rgba(0, 0, 0, 0.75)
                 ),
                 url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b");
 
@@ -55,15 +61,20 @@
 
         h1 {
             font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .formulaire {
             width: 100%;
             max-width: 450px;
             padding: 30px;
-            background: rgba(255,255,255,0.12);
+            background: rgba(255, 255, 255, 0.12);
             border-radius: 10px;
-            box-sizing: border-box;
         }
 
         label {
@@ -71,14 +82,15 @@
             margin-bottom: 8px;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 12px;
             margin-bottom: 20px;
             border: none;
             border-radius: 5px;
-            box-sizing: border-box;
             font-family: Arial, sans-serif;
+            font-size: 16px;
         }
 
         textarea {
@@ -93,6 +105,7 @@
             color: #17232b;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
             font-weight: bold;
             cursor: pointer;
         }
@@ -100,28 +113,63 @@
         button:hover {
             background-color: #e9b96e;
         }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            main {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Barre de navigation -->
+
     <nav>
-        <a href="travel_recommendation.html">Accueil</a>
-        <a href="about_us.html">À propos de nous</a>
-        <a href="contact_us.html">Contactez-nous</a>
+        <a href="index.html">Accueil</a>
+
+        <a href="about_us.html">
+            À propos de nous
+        </a>
+
+        <a href="contact_us.html">
+            Contactez-nous
+        </a>
     </nav>
+
+    <!-- Contenu de la page -->
 
     <main>
 
         <section>
             <h1>CONTACTEZ-NOUS</h1>
-            <p>Une question ? Une envie d'aventure ?</p>
-            <p>Écrivez-nous, nous serons ravis de vous répondre.</p>
+
+            <p>
+                Une question ? Une envie d'aventure ?
+            </p>
+
+            <p>
+                Écrivez-nous, nous serons ravis
+                de vous répondre.
+            </p>
         </section>
+
+        <!-- Formulaire de contact -->
 
         <form class="formulaire" id="contactForm">
 
             <label for="nom">Nom</label>
+
             <input
                 type="text"
                 id="nom"
@@ -131,6 +179,7 @@
             >
 
             <label for="email">Email</label>
+
             <input
                 type="email"
                 id="email"
@@ -140,6 +189,7 @@
             >
 
             <label for="message">Message</label>
+
             <textarea
                 id="message"
                 name="message"
@@ -147,17 +197,26 @@
                 required
             ></textarea>
 
-            <button type="submit">Soumettre</button>
+            <button type="submit">
+                Soumettre
+            </button>
 
         </form>
 
     </main>
 
+    <!-- Gestion du formulaire -->
+
     <script>
         document.getElementById("contactForm")
             .addEventListener("submit", function(event) {
+
                 event.preventDefault();
-                alert("Votre formulaire a été rempli. Merci !");
+
+                alert(
+                    "Votre formulaire a été rempli. Merci !"
+                );
+
             });
     </script>
 
